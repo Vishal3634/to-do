@@ -6,6 +6,7 @@ from database import SessionLocal, engine  # Absolute import (no dot)
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pathlib import Path
+import os
 
 # create database table
 models.Base.metadata.create_all(bind=engine)
